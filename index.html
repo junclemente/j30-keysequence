@@ -13,12 +13,17 @@ const secretCode = 'konami';
 window.addEventListener('keyup', (e) => {
     console.log(e.key);
     pressed.push(e.key);
-    if (pressed.length > secretCode.length) {
-        // pressed.splice(0, 1);
-        pressed.splice(-secretCode.length -1, pressed.length - secretCode.length); // Wesbos solution
-        console.log(pressed);
-    }
 
+    // My solution:
+    // if (pressed.length > secretCode.length) {
+    //     pressed.splice(0, 1);
+    //     console.log(pressed);
+    // }
+
+    // Wesbos solution:
+    pressed.splice(-secretCode.length -1, pressed.length - secretCode.length);
+
+    // My solution:
     // if (pressed.join("") === secretCode) {
     //     console.log("Matches!");
     // }
