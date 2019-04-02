@@ -12,3 +12,6 @@ This project is a practice in writing vanilla JavaScript and to learn about othe
 
 
 #### Project takeaways
+* `window.addEventListener('keyup', {e})` - Used to track any keyboard presses. The * `e.key` event is used to add the keypress to the array. There are also the `keypress` and `keydown` events. 
+* `array.prototype.slice()` - Used to manage the length of the array by using the length of the secretCode and counting backwards from the end of the array. 
+* [cornify.com](http://cornify.com) - Fun little javascript add-on that randomly adds rainbows and unicorns to the page when called. 
